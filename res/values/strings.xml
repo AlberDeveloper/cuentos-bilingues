@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<!-- English (Default) -->
+    <string name="app_name">Bilingual stories</string>
+    
+    <string name="action_language">Language</string>
+    <string name="prefLang1">Preferred language 1</string>
+    <string name="prefLang1Summary">Choose your native language</string>
+    <string name="prefLang2">Preferred language 2</string>
+	<string name="prefLang2Summary">Choose the language you want to learn</string>
+	<string name="language">You must restart the application for the changes to take effect.</string>
+	
+	<string name="action_about">About</string>
+	<string name="about">Application created as Final Year Project \nby the student Alberto Pereira Gaviño, \nstudent of Computer Engineering Management from the UOC.</string>
+	
+	<string name="action_exit">Exit</string>
+	
+	<string name="titleGameOptions">Choose the correct word</string>
+</resources>

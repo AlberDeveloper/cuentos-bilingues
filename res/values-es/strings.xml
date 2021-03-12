@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<!-- Español -->
+    <string name="app_name">Cuentos bilingües</string>
+    
+    <string name="action_language">Idioma</string>
+    <string name="prefLang1">Idioma preferido 1</string>
+    <string name="prefLang1Summary">Escoge tu idioma nativo</string>
+    <string name="prefLang2">Idioma preferido 2</string>
+	<string name="prefLang2Summary">Escoge el idioma que quieres aprender</string>
+	<string name="language">Debes reiniciar la aplicación para que los cambios hagan efecto.</string>
+	
+	<string name="action_about">Acerca de</string>
+	<string name="about">Aplicación creada como Proyecto Fin de Carrera \npor el alumno Alberto Pereira Gaviño, \nestudiante de Ingeniería Técnica de Informática Gestión de la UOC.</string>
+	
+	<string name="action_exit">Salir</string>
+	
+	<string name="titleGameOptions">Escoge la palabra correcta</string>
+</resources>

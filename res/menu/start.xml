@@ -1,0 +1,12 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >    
+    <item
+        android:id="@+id/action_language"
+        android:title="@string/action_language"/>
+    <item
+        android:id="@+id/action_about"
+        android:title="@string/action_about"/>
+    <item
+        android:id="@+id/action_exit"
+        android:title="@string/action_exit"/>
+
+</menu>

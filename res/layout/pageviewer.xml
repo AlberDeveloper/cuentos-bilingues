@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/pageviewerLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondo"
+    android:orientation="horizontal" >
+
+    <ViewFlipper
+        android:id="@+id/vfBookPage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <!-- El fondo de este LinearLayout sera la imagen del libro abierto -->
+
+        <LinearLayout
+            android:id="@+id/backgroundLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:baselineAligned="false"
+            android:orientation="horizontal" >
+
+            <!-- Botón para pasar página hacia la izquierda (retroceder página) -->
+
+            <Button
+                android:id="@+id/bLeft"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:background="@drawable/arrow_left" />
+
+            <!-- Layout que contiene la mitad izquierda del libro -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="50"
+                android:orientation="vertical" >
+
+                <!-- Título del idioma predefinido 2 -->
+
+                <TextView
+                    android:id="@+id/tvTitle2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:paddingBottom="10dp"
+                    android:paddingTop="15dp"
+                    android:textColor="#000"
+                    android:textSize="20sp" />
+
+                <!-- Imagen de la página N (lado izquierdo) -->
+
+                <ImageView
+                    android:id="@+id/ivPageImage"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="30sp"
+                    android:layout_marginLeft="20sp"
+                    android:layout_marginRight="20sp" >
+
+                    <TextView
+                        android:id="@+id/tvGameImage1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#000"
+                        android:textSize="20sp" 
+                        />
+
+                    <!-- android:drawableTop="@drawable/caperu_caperucita_roja" android:text="Caperucita roja"  --> 
+                    
+                    <TextView
+                        android:id="@+id/tvGameImage2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                       
+                         
+                         android:layout_below="@id/tvGameImage1"
+                        android:textColor="#000"
+                        android:textSize="20sp" />
+                    <!-- android:drawableTop="@drawable/caperu_lobo" android:text="Lobo" -->
+
+                    <TextView
+                        android:id="@+id/tvGameImage3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentLeft="true"
+                        android:textColor="#000"
+                        android:textSize="20sp" />
+                    <!-- android:drawableTop="@drawable/caperu_abuelita" android:text="Abuelita" -->
+                </RelativeLayout>
+            </LinearLayout>
+
+            <!-- Layout que contiene la mitad derecha del libro -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="50"
+                android:orientation="vertical" >
+
+                <!-- Título del idioma predefinido 1 -->
+
+                <TextView
+                    android:id="@+id/tvTitle1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:paddingBottom="10dp"
+                    android:paddingTop="15dp"
+                    android:textColor="#000"
+                    android:textSize="20sp" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="30sp"
+                    android:layout_marginLeft="10sp"
+                    android:layout_marginRight="15sp" >
+
+                    <!-- Texto del idioma predefinido 1 -->
+
+                    <TextView
+                        android:id="@+id/tvTextLang1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:gravity="fill_horizontal"
+                        android:textColor="#000"
+                        android:textSize="18sp" />
+
+                    <!-- Texto del idioma predefinido 2 -->
+
+                    <TextView
+                        android:id="@+id/tvTextLang2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tvTextLang1"
+                        android:textColor="#000"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/tvGameImage4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="5dp"
+                        android:textColor="#000"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/tvGameImage5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                         android:layout_below="@id/tvGameImage4"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="5dp"
+                        android:textColor="#000"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/tvGameImage6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentLeft="true"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="5dp"
+                        android:textColor="#000"
+                        android:textSize="20sp" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <!-- Botón para pasar página hacia la derecha (avanzar página) -->
+
+            <Button
+                android:id="@+id/bRight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:background="@drawable/arrow_right" />
+        </LinearLayout>
+    </ViewFlipper>
+
+</LinearLayout>
